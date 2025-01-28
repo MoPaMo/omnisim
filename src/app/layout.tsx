@@ -16,17 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased scroll-smooth`}
       >
-        <section>
+        <section className="bg">
           <div className="isolate">
             <div className="noise"></div>
             <div className="overlay"></div>
           </div>
         </section>
-        <main className="">
-          {children}
-        </main>
+        <main className="main">{children}</main>
       </body>
     </html>
   );

@@ -37,14 +37,14 @@ body {
   mix-blend-mode: multiply;
 }
 
-section {
+.bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-main {
+.main {
   top: 0;
   left: 0;
   padding: 1rem;
