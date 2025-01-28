@@ -47,6 +47,15 @@ export default function Home() {
           >
             Read our docs
           </a>
+          
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, temporibus consequatur? Officia corrupti veniam a omnis tempora voluptatem velit dolorum accusantium et, laudantium reprehenderit numquam sunt odit quis consequuntur doloribus?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iure reiciendis ratione asperiores quisquam. Perspiciatis culpa ipsum, eius, tempora quaerat, earum minus est quisquam itaque possimus officiis omnis quos tempore.
+          Perspiciatis delectus voluptatem cupiditate. Aperiam nobis, laboriosam excepturi quidem, et harum totam, molestiae natus omnis sunt similique explicabo? Necessitatibus reiciendis odio in nulla iure deserunt dolore commodi nemo doloribus blanditiis?
+          Deserunt ratione ea, voluptatibus, autem ut fugit tempore fugiat velit corporis magnam placeat doloribus? Magnam quis, repellendus ducimus impedit incidunt facere hic, consequuntur voluptatem nisi deleniti quam pariatur officia ea.
+          Alias voluptatem sequi vero quae impedit molestias dolorum libero modi repudiandae mollitia, dolor porro inventore esse nulla ut repellendus accusamus. Rem, soluta sequi! Veritatis consequuntur quos, repellendus laborum iste asperiores.
+          Nihil earum quos nobis totam veniam assumenda quia doloribus nam praesentium magni dicta, sapiente magnam aspernatur omnis corrupti molestias architecto ipsa iure distinctio laudantium facere, sequi alias unde. Sequi, eligendi?
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

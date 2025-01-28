@@ -27,7 +27,28 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen w-full relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-500 via-slate-800 to-black">
+            <div
+              className="absolute inset-0 opacity-7"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                backgroundRepeat: "repeat",
+                mixBlendMode: "soft-light",
+              }}
+            />
+            <div
+              className="absolute inset-0 opacity-9"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='1.2' numOctaves='4' seed='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                backgroundRepeat: "repeat",
+                mixBlendMode: "overlay",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/20 opacity-7" />
+          </div>
+          <div className="relative z-10 p-8 text-white">{children}</div>
+        </div>
       </body>
     </html>
   );
