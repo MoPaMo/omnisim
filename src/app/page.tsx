@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react";
-
+import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="">
@@ -10,6 +10,9 @@ export default function Home() {
       <p className="text-2xl font-mono tracking-tighter">
         The best SIM card for your needs
       </p>
+      <Button size="lg" className="mt-4 text-lg">
+        Start comparing now
+      </Button>
     </div>
   );
 }
