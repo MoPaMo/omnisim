@@ -10,8 +10,8 @@ export default function Home() {
       <p className="text-2xl font-mono tracking-tighter">
         The best SIM card for your needs
       </p>
-      <Button size="lg" className="mt-4 text-lg">
-        Start comparing now
+      <Button size="lg" className="mt-4 text-lg font-mono tracking-tighter">
+        START COMPARING NOW
       </Button>
     </div>
   );
