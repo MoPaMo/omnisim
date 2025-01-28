@@ -1,5 +1,13 @@
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
 export default function Home() {
   return (
@@ -10,7 +18,7 @@ export default function Home() {
           mniSIM
         </h1>
         <p className="text-2xl font-mono tracking-tighter">
-          The best SIM card for your needs
+          Find the best eSIM for your trip!
         </p>
         <Link href={"#footer"}>
           <Button size="lg" className="mt-4 text-lg font-mono tracking-tighter">
@@ -18,7 +26,17 @@ export default function Home() {
           </Button>
         </Link>
       </header>
-      <main></main>
+      <br />
+      <main>
+        <Card>
+          <CardHeader>
+            <CardTitle>Hi</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Input></Input>
+          </CardContent>
+        </Card>
+      </main>
       <footer id="footer">hi</footer>
     </div>
   );
