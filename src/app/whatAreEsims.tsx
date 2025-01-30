@@ -26,9 +26,6 @@ export function WhatAreEsims() {
                 Buy an eSIM plan and receive a QR code / magic link
               </p>
             </div>
-            <div className="absolute hidden h-2 w-full top-10 left-full md:block">
-              <div className="h-0.5 w-full bg-primary/30" />
-            </div>
           </div>
           <div className="relative flex flex-col items-center">
             <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
@@ -39,9 +36,6 @@ export function WhatAreEsims() {
               <p className="mt-1 text-sm text-muted-foreground font-mono tracking-tighter">
                 Scan QR code or click a link on your device
               </p>
-            </div>
-            <div className="absolute hidden h-2 w-full top-10 left-full md:block">
-              <div className="h-0.5 w-full bg-primary/30" />
             </div>
           </div>
           <div className="flex flex-col items-center">
