@@ -1,8 +1,9 @@
-import { Smartphone, Wifi, Download } from "lucide-react";
+import { Download, Smartphone, Wifi } from "lucide-react";
+
 export function WhatAreEsims() {
   return (
-    <section className="w-full bg-muted/10 text-white">
-      <div className="container px-4 flex items-center justify-center flex-col py-16">
+    <section className="flex w-full min-h-screen bg-muted/10 text-white">
+      <div className="container px-4 flex items-center justify-center flex-col my-auto py-16">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
@@ -35,7 +36,7 @@ export function WhatAreEsims() {
             </div>
             <div className="mt-4 text-center">
               <h3 className="font-semibold">2. Scan & Install</h3>
-              <p className="mt-1 text-sm text-muted-foreground font-mono tracking-tighter ">
+              <p className="mt-1 text-sm text-muted-foreground font-mono tracking-tighter">
                 Scan QR code or click a link on your device
               </p>
             </div>
