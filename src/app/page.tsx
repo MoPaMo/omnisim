@@ -31,7 +31,7 @@ export default function Home() {
           <img
             src="/header.svg"
             alt="Image of a phone with an sd card"
-            className="h-full"
+            className="h-full transform scale-[1.5] rotate-[25deg] transition-transform duration-700 ease-in-out hover:scale-[1.7] hover:rotate-[35deg]"
           />
         </div>
       </header>
