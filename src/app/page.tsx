@@ -26,8 +26,8 @@ export default function Home() {
               START COMPARING NOW
             </Button>
           </Link>
-        </div>
-        <div>
+        </div> 
+        <div className="hidden sm:block">
           <img
             src="/header.svg"
             alt="Image of a phone with an sd card"
