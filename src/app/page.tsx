@@ -9,19 +9,31 @@ export default function Home() {
   return (
     <div className="min-h-[200vh]">
       {" "}
-      <header className="container mx-auto px-4 py-16 min-h-[50vh] flex flex-col justify-center space-y-4 text">
-        <h1 className="font-sans font-ultrablack text-7xl tracking-tighter text-white">
-          <Globe className="inline" width={69} height={69} />
-          mniSIM
-        </h1> 
-        <p className="text-2xl font-mono tracking-tighter text-white">
-          Find the best eSIM for your trip!
-        </p>
-        <Link href={"#comparer"}>
-          <Button size="lg" className="mt-4 text-lg font-mono tracking-tighter">
-            START COMPARING NOW
-          </Button>
-        </Link>
+      <header className="container mx-auto px-4 py-16 min-h-[50vh] grid grid-flow-col gap-8 items-center">
+        <div className="flex flex-col justify-center space-y-4">
+          <h1 className="font-sans font-ultrablack text-7xl tracking-tighter text-white">
+            <Globe className="inline" width={69} height={69} />
+            mniSIM
+          </h1>
+          <p className="text-2xl font-mono tracking-tighter text-white">
+            Find the best eSIM for your trip!
+          </p>
+          <Link href={"#comparer"}>
+            <Button
+              size="lg"
+              className="mt-4 text-lg font-mono tracking-tighter"
+            >
+              START COMPARING NOW
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <img
+            src="/header.svg"
+            alt="Image of a phone with an sd card"
+            className="h-full"
+          />
+        </div>
       </header>
       <main>
         <WhatAreEsims />
