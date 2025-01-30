@@ -13,7 +13,7 @@ const VectorMap = dynamic(
 );
 import { worldMill } from "@react-jvectormap/world";
 
-import Router from "next/router";
+import { useRouter } from "next/navigation";
 
 import countries from "@/data/countries";
 
@@ -30,7 +30,7 @@ export function InteractiveWorldMap() {
     });
     setMapData(initialMapData);
   }, []);
-
+  const router = useRouter();
   // Update map height based on screen size
   useEffect(() => {
     const updateHeight = () => {
@@ -51,6 +51,7 @@ export function InteractiveWorldMap() {
   const handleRegionClick = (e: any, code: string) => {
     if (countries[code]?.available) {
       setSelectedCountry(code);
+      router.push(`/c/${code}`);
     }
   };
 
