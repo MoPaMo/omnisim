@@ -3,7 +3,7 @@ import { Download, Smartphone, Wifi } from "lucide-react";
 export function WhatAreEsims() {
   return (
     <section className="flex w-full min-h-screen bg-muted/10 text-white">
-      <div className="container px-4 flex items-center justify-center flex-col my-auto py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center flex-col py-16">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
