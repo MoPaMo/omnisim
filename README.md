@@ -16,3 +16,7 @@ Tech Specs:
 - custom themes and backgrounds
 
 try it here: <https://omnisim.vercel.app/>
+
+
+
+I created the image for the header in Figma: https://www.figma.com/design/k8TG92fIrsvE7tLizDfSyA/omnisim-figma?node-id=0-1&t=K4DDqUak2ztHDqNf-1
