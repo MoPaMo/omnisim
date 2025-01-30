@@ -17,6 +17,21 @@ body {
   filter: contrast(170%) brightness(1000%);
   background-attachment: scroll;
 }
+@keyframes float {
+  0% {
+    transform: scale(1.5) rotate(25deg) translateY(0px);
+  }
+  50% {
+    transform: scale(1.5) rotate(28deg) translateY(-10px);
+  }
+  100% {
+    transform: scale(1.5) rotate(25deg) translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
 
 /* Chrome-specific */
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
