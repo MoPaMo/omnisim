@@ -10,11 +10,12 @@ export default function NotFound() {
           <MapPinOff className="w-24 h-24 text-white" />
         </div>
         <h1 className="text-4xl font-bold mb-4">
-          Country page not implemented yet{" "}
+          Country page not implemented yet
         </h1>
         <p className="text-muted-foreground mb-6">
           Due to the high seas deadline, I was unable to implement this page on
-          time, so for now you can just admire the design <Sticker className="inline"/>.
+          time, so for now you can just admire the design{" "}
+          <Sticker className="inline" />.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild variant="outline">
