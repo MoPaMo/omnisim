@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <div className="min-h-[200vh]">
       {" "}
-      <header className="container mx-auto px-4 py-16">
+      <header className="container mx-auto px-4 py-16 min-h-[50vh] flex flex-col justify-center space-y-4 text">
         <h1 className="font-sans font-ultrablack text-7xl tracking-tighter text-white">
           <Globe className="inline" width={69} height={69} />
           mniSIM
-        </h1>
+        </h1> 
         <p className="text-2xl font-mono tracking-tighter text-white">
           Find the best eSIM for your trip!
         </p>
