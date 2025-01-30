@@ -14,4 +14,4 @@ Tech Specs:
 > shadCN
 > custom themes and backgrounds
 
-try it here: 
+try it here: <https://omnisim.vercel.app/>
