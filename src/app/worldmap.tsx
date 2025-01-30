@@ -17,7 +17,7 @@ import { useRouter } from "next/navigation";
 
 import countries from "@/data/countries";
 
-export function InteractiveWorldMap({id}: { id: string }) {
+export function InteractiveWorldMap({ id }: { id: string }) {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [mapData, setMapData] = useState<Record<string, number>>({});
   const [mapHeight, setMapHeight] = useState("600px");
@@ -88,10 +88,24 @@ export function InteractiveWorldMap({id}: { id: string }) {
 
   return (
     <div className=" w-full  " id={id}>
-
       <Card className="p-4 bg-background/10">
-      <CardTitle className="text-2xl font-black">eSIMs for <small className="font-thin text-lg font-mono tracking-tight">(almost)</small> every place</CardTitle>
-        <CardContent style={{ height: mapHeight }} className="bg-transparent w-full">
+        <CardTitle className="">
+          <h3 className="text-2xl font-black">
+            eSIMs for{" "}
+            <small className="font-thin text-lg font-mono tracking-tight">
+              (almost)
+            </small>{" "}
+            every place
+          </h3>
+          <h4 className="font-normal font-mono tracking-tighter">
+            Click on any country to compare the best eSIMS for that country
+          </h4>
+        </CardTitle>
+
+        <CardContent
+          style={{ height: mapHeight }}
+          className="bg-transparent w-full"
+        >
           {typeof window !== "undefined" && (
             <VectorMap {...mapOptions} onRegionClick={handleRegionClick} />
           )}
