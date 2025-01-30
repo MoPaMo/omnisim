@@ -13,13 +13,13 @@ import { WhatAreEsims } from "./whatAreEsims";
 
 export default function Home() {
   return (
-    <div>
-      <header className="">
-        <h1 className="font-sans font-ultrablack text-7xl tracking-tighter">
+    <div className="min-h-screen">
+      <header className="container mx-auto px-4 py-16">
+        <h1 className="font-sans font-ultrablack text-7xl tracking-tighter text-white">
           <Globe className="inline" width={69} height={69} />
           mniSIM
         </h1>
-        <p className="text-2xl font-mono tracking-tighter">
+        <p className="text-2xl font-mono tracking-tighter text-white">
           Find the best eSIM for your trip!
         </p>
         <Link href={"#footer"}>
@@ -28,19 +28,20 @@ export default function Home() {
           </Button>
         </Link>
       </header>
-      <br />
       <main>
-        <Card>
+        <Card className="container mx-auto px-4 mb-16">
           <CardHeader>
             <CardTitle>Hi</CardTitle>
           </CardHeader>
           <CardContent>
-            <Input></Input>
+            <Input />
           </CardContent>
         </Card>
-        <WhatAreEsims></WhatAreEsims>
+        <WhatAreEsims />
       </main>
-      <footer id="footer">hi</footer>
+      <footer id="footer" className="container mx-auto px-4 py-16 text-white">
+        hi
+      </footer>
     </div>
   );
 }
