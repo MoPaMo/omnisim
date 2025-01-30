@@ -2,8 +2,8 @@ import { Download, Smartphone, Wifi } from "lucide-react";
 
 export function WhatAreEsims() {
   return (
-    <section className="flex w-full min-h-screen bg-muted/10 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center flex-col py-16">
+    <section className="w-full py-16 text-white">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
@@ -15,7 +15,7 @@ export function WhatAreEsims() {
             </p>
           </div>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3 w-full justify-items-center">
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
           <div className="relative flex flex-col items-center">
             <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
               <Download className="h-10 w-10 text-primary" />
