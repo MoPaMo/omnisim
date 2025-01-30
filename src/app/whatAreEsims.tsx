@@ -2,7 +2,7 @@ import { Download, Smartphone, Wifi } from "lucide-react";
 
 export function WhatAreEsims() {
   return (
-    <section className="w-full py-16 text-white">
+    <section className="w-full py-16 text-white bg-muted/25">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

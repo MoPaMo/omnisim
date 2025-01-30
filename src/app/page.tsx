@@ -17,21 +17,13 @@ export default function Home() {
         <p className="text-2xl font-mono tracking-tighter text-white">
           Find the best eSIM for your trip!
         </p>
-        <Link href={"#footer"}>
+        <Link href={"#comparer"}>
           <Button size="lg" className="mt-4 text-lg font-mono tracking-tighter">
             START COMPARING NOW
           </Button>
         </Link>
       </header>
       <main>
-        <Card className="container mx-auto px-4 mb-16">
-          <CardHeader>
-            <CardTitle>Hi</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <Input />
-          </CardContent>
-        </Card>
         <WhatAreEsims />
       </main>
       <footer id="footer" className="container mx-auto px-4 py-16 text-white">
