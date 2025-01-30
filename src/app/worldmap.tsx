@@ -17,7 +17,7 @@ import { useRouter } from "next/navigation";
 
 import countries from "@/data/countries";
 
-export function InteractiveWorldMap() {
+export function InteractiveWorldMap({id}: { id: string }) {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [mapData, setMapData] = useState<Record<string, number>>({});
   const [mapHeight, setMapHeight] = useState("600px");
@@ -87,7 +87,7 @@ export function InteractiveWorldMap() {
   };
 
   return (
-    <div className=" w-full  ">
+    <div className=" w-full  " id={id}>
 
       <Card className="p-4 bg-background/10">
       <CardTitle className="text-2xl font-black">eSIMs for <small className="font-thin text-lg font-mono tracking-tight">(almost)</small> every place</CardTitle>

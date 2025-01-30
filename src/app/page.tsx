@@ -18,7 +18,7 @@ export default function Home() {
           <p className="text-2xl font-mono tracking-tighter text-white">
             Find the best eSIM for your trip!
           </p>
-          <Link href={"#comparer"}>
+          <Link href={"#compare"}>
             <Button
               size="lg"
               className="mt-4 text-lg font-mono tracking-tighter"
@@ -37,11 +37,9 @@ export default function Home() {
       </header>
       <main>
         <WhatAreEsims />
-        <InteractiveWorldMap />
+        <InteractiveWorldMap id="compare" />
       </main>
-      <footer id="footer" className="container mx-auto px-4 py-16 text-white">
-        hi
-      </footer>
+      
     </div>
   );
 }
