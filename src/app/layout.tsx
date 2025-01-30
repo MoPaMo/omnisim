@@ -5,7 +5,7 @@ import "./globals.css";
 import type React from "react"; // Import React
 
 export const metadata: Metadata = {
-  title: "oniSIM",
+  title: "omniSIM",
   description: "Find the best eSIM for your trip!",
 };
 
