@@ -73,17 +73,17 @@ export function InteractiveWorldMap() {
   const mapOptions: IVectorMapProps = {
     map: worldMill,
     zoomOnScroll: false,
-    backgroundColor: "transparent",
+    backgroundColor: "#0000",
     regionStyle: {
       initial: {
-        fill: "hsl(var(--muted))",
         stroke: "none",
+        fill: "hsl(var(--muted))",
       },
       hover: {
         cursor: "pointer",
       },
       selected: {
-        fill: "green",
+        fill: "#f3f31b",
       },
       selectedHover: {
         fill: "#fff",
@@ -94,7 +94,7 @@ export function InteractiveWorldMap() {
         {
           attribute: "fill",
           values: mapData,
-          scale: ["green"],
+          scale: ["#f3f31b"], 
           normalizeFunction: "polynomial",
         },
       ],
