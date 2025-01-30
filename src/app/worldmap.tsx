@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Info } from "lucide-react";
 import type { IVectorMapProps } from "@react-jvectormap/core/dist/types";
@@ -88,12 +88,14 @@ export function InteractiveWorldMap() {
 
   return (
     <div className=" w-full  ">
+
       <Card className="p-4 bg-background/10">
-        <div style={{ height: mapHeight }} className="bg-transparent w-full">
+      <CardTitle className="text-2xl font-black">eSIMs for <small className="font-thin text-lg font-mono tracking-tight">(almost)</small> every place</CardTitle>
+        <CardContent style={{ height: mapHeight }} className="bg-transparent w-full">
           {typeof window !== "undefined" && (
             <VectorMap {...mapOptions} onRegionClick={handleRegionClick} />
           )}
-        </div>
+        </CardContent>
 
         <div className=" bg-background/90 p-4 rounded-lg shadow-lg">
           <div className="space-y-2">
