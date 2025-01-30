@@ -13,7 +13,6 @@ const VectorMap = dynamic(
 );
 import { worldMill } from "@react-jvectormap/world";
 
-
 interface Country {
   id: string;
   name: string;
@@ -31,6 +30,7 @@ const countries: Record<string, Country> = {
   AU: { id: "AU", name: "Australia", available: true },
   CA: { id: "CA", name: "Canada", available: true },
   NZ: { id: "NZ", name: "New Zealand", available: true },
+  BR: { id: "BR", name: "Brazil", available: true },
 };
 
 export function InteractiveWorldMap() {
@@ -72,10 +72,10 @@ export function InteractiveWorldMap() {
 
   const mapOptions = {
     map: worldMill,
-    backgroundColor: "transparent",
     zoomOnScroll: false,
+    panOnDrag: false,
     zoomButtons: false,
-    baackground: "hsl(var(--primary))",
+    backgroundColor: "transparent",
     regionStyle: {
       initial: {
         fill: "hsl(var(--muted))",
@@ -89,29 +89,21 @@ export function InteractiveWorldMap() {
         cursor: "pointer",
       },
       selected: {
-        fill: "hsl(var(--primary))",
+        fill: "green",
       },
       selectedHover: {
-        fill: "hsl(var(--primary))",
+        fill: "#fff",
       },
     },
     series: {
       regions: [
         {
+          attribute: "fill",
           values: mapData,
-          scale: ["hsl(var(--primary))"],
+          scale: ["green"],
           normalizeFunction: "polynomial",
         },
       ],
-    },
-    onRegionTipShow: (e: any, el: any, code: string) => {
-      if (countries[code]) {
-        el.html(
-          el.html() +
-            " - " +
-            (countries[code].available ? "eSIMs Available" : "Coming Soon")
-        );
-      }
     },
   };
 
