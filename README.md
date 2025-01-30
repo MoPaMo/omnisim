@@ -9,9 +9,9 @@ Because of the upcoming high seas deadline, I'm shipping only the static layout 
 I took inspiration at Apple product pages with the noisy textures.
 
 Tech Specs:
-> NextJS
-> tailwind
-> shadCN
-> custom themes and backgrounds
+- NextJS
+- tailwind
+- shadCN
+- custom themes and backgrounds
 
 try it here: <https://omnisim.vercel.app/>
