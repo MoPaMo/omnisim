@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { WhatAreEsims } from "./whatAreEsims";
+
 export default function Home() {
   return (
     <div>
@@ -36,6 +38,7 @@ export default function Home() {
             <Input></Input>
           </CardContent>
         </Card>
+        <WhatAreEsims></WhatAreEsims>
       </main>
       <footer id="footer">hi</footer>
     </div>
