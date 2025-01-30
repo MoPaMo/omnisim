@@ -102,7 +102,7 @@ export function InteractiveWorldMap() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full bg-background/10">
       <Card className="p-4">
         <div style={{ height: mapHeight }} className="relative">
           {typeof window !== "undefined" && (
