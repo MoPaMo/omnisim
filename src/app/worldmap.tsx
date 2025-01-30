@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Info } from "lucide-react";
-
+import type { IVectorMapProps } from "@react-jvectormap/core/dist/types";
 //lazy load map
 const VectorMap = dynamic(
   () => import("@react-jvectormap/core").then((m) => m.VectorMap),
@@ -70,22 +70,16 @@ export function InteractiveWorldMap() {
     }
   };
 
-  const mapOptions = {
+  const mapOptions: IVectorMapProps = {
     map: worldMill,
     zoomOnScroll: false,
-    panOnDrag: false,
-    zoomButtons: false,
     backgroundColor: "transparent",
     regionStyle: {
       initial: {
         fill: "hsl(var(--muted))",
-        "fill-opacity": 1,
         stroke: "none",
-        "stroke-width": 0,
-        "stroke-opacity": 0,
       },
       hover: {
-        "fill-opacity": 0.8,
         cursor: "pointer",
       },
       selected: {
